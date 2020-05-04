@@ -1,4 +1,5 @@
 # BSPWM Themes  
+After seeing some desktop threads recently, I decided to dig out my old wm themes and start ricing again (I forgot how much I loved bspwm >:^)). I like the polybar + bspwm combo so these are mostly color schemes and some scripts.  
 <br>  
 
 ## Purple  
