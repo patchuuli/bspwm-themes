@@ -1,18 +1,50 @@
-!.Xresources_purp
+!.Xresources_peachy
 
+! PALETTE
+#define BLACK		#773853
+#define RED			#ba454d
+#define GREEN		#9c9b56
+#define YELLOW 	#c67d4a
+#define BLUE 		#515d75
+#define MAGENTA	#736b9e
+#define CYAN		#809294
+#define WHITE 	#f2d4ca
+#define BOLD_BLACK	#9c5752
+#define BOLD_WHITE 	#fff7f4
 
-! https://colorhunt.co/palette/159618
-! #484C7F 					Darker
-! #AC8DAF 					...
-! #DDB6C6 					...
-! #F1D4D4 					Lighter
+! COLORS (SPECIAL)
+URxvt*background: 				WHITE
+URxvt*foreground: 				BLACK
+URxvt*cursorColor:				BOLD_BLACK
+URxvt*highlightColor: 		BOLD_BLACK
+URxvt*highlightTextColor:	BOLD_BLACK
+URxvt*underlineColor: 		BLACK
+
+! COLORS (16)
+URxvt*color0: 				BLACK
+URxvt*color1: 				RED
+URxvt*color2: 				GREEN
+URxvt*color3: 				YELLOW
+URxvt*color4: 				BLUE
+URxvt*color5: 				MAGENTA
+URxvt*color6: 				CYAN
+URxvt*color7: 				WHITE
+URxvt*color8: 				BOLD_BLACK
+URxvt*color9: 				RED
+URxvt*color10: 				GREEN
+URxvt*color11: 				YELLOW
+URxvt*color12: 				BLUE
+URxvt*color13: 				MAGENTA
+URxvt*color14: 				CYAN
+URxvt*color15: 				BOLD_WHITE
+
 
 URxvt.termName: 			rxvt-256color
 URxvt.iso14755:         	False
 !URxvt.reverseVideo:     	True
 URxvt*scrollBar: 			false
 URxvt*saveLines:			1000
-!URxvt*internalBorder: 		32
+URxvt*internalBorder: 16
 !URxvt*externalBorder: 		10
 !URxvt*geometry:			78x27
 URxvt*geometry:				53x17
@@ -51,29 +83,3 @@ URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-0x2b: 	perl:font-size:increase
 URxvt.keysym.Control-0x2d: 	perl:font-size:decrease
 
-
-URxvt*background: 			#f1d4d4
-URxvt*foreground: 			#484c7f
-URxvt*cursorColor: 			#a4bdc1
-URxvt*highlightColor: 		#484c7f
-URxvt*highlightTextColor:	#f1d4d4
-;URxvt*highlightTextColor:	#ddb6c6
-URxvt*underlineColor: 		#ddb6c6
-
-URxvt*color0: 				#DDB6C6
-URxvt*color1: 				#484c7f
-URxvt*color2: 				#484c7f
-URxvt*color3: 				#484c7f
-URxvt*color4: 				#484c7f
-URxvt*color5: 				#484c7f
-URxvt*color6: 				#484c7f
-URxvt*color7: 				#484c7f
-URxvt*color8: 				#ac8daf
-URxvt*color9: 				#484c7f 
-URxvt*color10: 				#484c7f
-URxvt*color11: 				#484c7f
-URxvt*color12: 				#484c7f
-URxvt*color13: 				#484c7f
-URxvt*color14: 				#484c7f
-URxvt*color15: 				#484c7f
-!*colorUL: 					#484c7f

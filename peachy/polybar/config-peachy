@@ -24,11 +24,11 @@ alertfg = #4e4e4e
 
 
 
-[purp]
-bg = #484c7f
-fg = #f1d4d4
-alertbg = ${purp.fg}
-alertfg = ${purp.bg}
+[peachy]
+bg = #773853
+fg = #f2d4ca
+alertbg = ${peachy.fg}
+alertfg = ${peachy.bg}
 
 
 [charcoal]
@@ -39,12 +39,12 @@ alertfg = ${charcoal.bg}
 
 
 
-[bar/purp]
+[bar/peachy]
 fixed-center = true;
 width = 100%
 height = 18
-background = ${purp.bg}
-foreground = ${purp.fg}
+background = ${peachy.bg}
+foreground = ${peachy.fg}
 line-size = 0
 border-bottom-size = 0
 font-0 = tewi:size=11;1
@@ -84,7 +84,7 @@ module-margin-right = 2
 padding-left = 1
 padding-right = 1
 modules-center = date
-modules-right = temperature-purp gee ayy battery
+modules-right = temperature-peachy gee ayy battery
 
 
 [bar/twm-taskbar]
@@ -172,26 +172,26 @@ label-monitor = %name%
 label-focused = %icon%
 label-focused-padding = 2
 label-focused-margin = 0
-label-focused-background = ${purp.fg}
-label-focused-foreground = ${purp.bg}
+label-focused-background = ${peachy.fg}
+label-focused-foreground = ${peachy.bg}
 label-occupied = %icon%
 label-occupied-padding = 2
 label-occupied-margin = 0
-label-occupied-background = ${purp.bg}
-label-occupied-foreground = ${purp.fg}
+label-occupied-background = ${peachy.bg}
+label-occupied-foreground = ${peachy.fg}
 label-urgent = %icon%!
 label-urgent-padding = 2
 label-urgent-margin = 0
-label-urgent-background = ${purp.bg}
-label-urgent-foreground = ${purp.fg}
+label-urgent-background = ${peachy.bg}
+label-urgent-foreground = ${peachy.fg}
 label-empty = %icon%
 label-empty-padding = 2
-label-empty-background = ${purp.bg}
-label-empty-foreground = ${purp.fg}
+label-empty-background = ${peachy.bg}
+label-empty-foreground = ${peachy.fg}
 label-empty-margin = 0
 ; Separator in between workspaces
 label-separator = .
-label-separator-foreground = ${purp.bg}
+label-separator-foreground = ${peachy.bg}
 
 
 [module/filesystem]
@@ -203,7 +203,7 @@ label-mounted = %{F$twm.fg}SSD: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground}
 
-[module/filesystem-purp]
+[module/filesystem-peachy]
 type = internal/fs
 interval = 25
 mount-0 = /
@@ -227,13 +227,13 @@ format-prefix = "CPU: "
 format-prefix-foreground = ${twm.fg}
 label = %percentage:2%%
 
-[module/cpu-purp]
+[module/cpu-peachy]
 type = internal/cpu
 interval = 2
 format-prefix = "CPU: "
 label = %percentage:2%%
-format-prefix-foreground = ${purp.fg}
-format-prefix-background = ${purp.bg}
+format-prefix-foreground = ${peachy.fg}
+format-prefix-background = ${peachy.bg}
 
 
 [module/memory]
@@ -253,11 +253,11 @@ label = %percentage_used%%
 
 
 
-[module/memory-purp]
+[module/memory-peachy]
 type = internal/memory
 interval = 2
 format-prefix = "MEM: "
-format-prefix-foreground = ${purp.fg}
+format-prefix-foreground = ${peachy.fg}
 label = %percentage_used%%
 
 
@@ -283,7 +283,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 type = internal/network
 interface = enp2s0
 interval = 3.0
-format-connected-underline = ${purp.fg}
+format-connected-underline = ${peachy.fg}
 label-connected = %local_ip%
 format-disconnected =
 
@@ -367,7 +367,7 @@ ramp-2 = 
 ramp-foreground = ${twm.alertfg}
 
 
-[module/temperature-purp]
+[module/temperature-peachy]
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
@@ -377,8 +377,8 @@ format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${purp.alertfg}
-label-warn-background = ${purp.alertbg}
+label-warn-foreground = ${peachy.alertfg}
+label-warn-background = ${peachy.alertbg}
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
@@ -421,8 +421,8 @@ label-volume =VOL: %percentage%%
 ;   %percentage% (default)
 ;   %decibels% (unreleased)
 label-muted = muted
-label-muted-foreground = ${purp.bg}
-label-muted-background = ${purp.fg}
+label-muted-foreground = ${peachy.bg}
+label-muted-background = ${peachy.fg}
 label-muted-padding = 2
 
 ; Only applies if <ramp-volume> is used

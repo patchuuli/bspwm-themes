@@ -7,7 +7,7 @@ alt + Return
 
 # program launcher
 alt + a
-	dmenu_run -h 18 -i -fn "tewi:size=8" -nb '#484c7f' -nf '#f1d4d4' -sb '#f1d4d4' -sf '#484c7f' -w 1050 #-x 330
+	dmenu_run -h 18 -i -fn "tewi:size=8" -nb '#773853' -nf '#f2d4ca' -sb '#773853' -sf '#f2d4ca' -w 1050 #-x 330
 alt + e
 	pcmanfm
 
