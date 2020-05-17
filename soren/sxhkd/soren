@@ -7,7 +7,7 @@ alt + Return
 
 # program launcher
 alt + a
-	dmenu_run -h 30 -i -fn "IBM Plex Mono:style=Medium:size=9" -nb '#050505' -nf '#eaeaea' -sb '#050505' -sf '#eaeaea'
+	dmenu_run -h 30 -i -fn "IBM Plex Mono:style=Medium:size=9" -nb '#050505' -nf '#e4d7bd' -sb '#050505' -sf '#e4d7bd'
 alt + e
 	pcmanfm
 

@@ -1,16 +1,27 @@
 !.Xresources soren
 
 ! PALETTE
-#define BLACK		#050505
-#define RED			#23261b
-#define GREEN		#383c2e
-#define YELLOW 	#5f5f5f
-#define BLUE 		#23261b
-#define MAGENTA	#383c2e
-#define CYAN		#5f5f5f
-#define WHITE 	#eaeaea
-#define BOLD_BLACK	#050505
-#define BOLD_WHITE 	#eaeaea
+!#define BLACK		#050505
+!#define RED			#23261b
+!#define GREEN		#383c2e
+!#define YELLOW 	#5f5f5f
+!#define BLUE 		#23261b
+!#define MAGENTA	#383c2e
+!#define CYAN		#5f5f5f
+!#define WHITE 	#e2c995
+!#define BOLD_BLACK	#2b231c
+!#define BOLD_WHITE 	#eaeaea
+
+#define BLACK				#050505
+#define RED					#383c2e
+#define GREEN				#424539
+#define YELLOW			#554d40
+#define BLUE 				#5f5f5f
+#define MAGENTA			#8b8062
+#define CYAN				#8b8f8b
+#define WHITE 			#e4d7bd
+#define BOLD_BLACK	#2b231c
+#define BOLD_WHITE 	#e2c995
 
 ! COLORS (SPECIAL)
 URxvt*background: 				BLACK

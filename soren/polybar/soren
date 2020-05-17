@@ -1,6 +1,6 @@
 [soren]
 black = #050505
-white = #eaeaea
+white = #e4d7bd
 dgreen = #23261b
 lgreen = #383c2e
 mgray = #5f5f5f
@@ -17,17 +17,19 @@ module-margin-left = 4
 module-margin-right = 4
 padding-left = 4
 padding-right = 4
+;tray-position = center
 modules-left = pulseaudio eth 
-modules-right = bspwm date
+modules-center = bspwm
+modules-right = date
  
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = 1;cavatappi
-ws-icon-1 = 2;penne rigate
-ws-icon-2 = 3;tortiglioni
-ws-icon-3 = 4;cellentani
-ws-icon-default = ♟
+ws-icon-0 = 1;premier
+ws-icon-1 = 2;seconde
+ws-icon-2 = 3;troisième
+ws-icon-3 = 4;quatrième
+;ws-icon-default = ♟
 
 format = <label-state> <label-mode>
 label-monitor = %name%
