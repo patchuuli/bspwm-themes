@@ -15,6 +15,10 @@ alt + e
 alt + shift + r
 	pkill -USR1 -x sxhkd
 
+# mouse bindings
+alt + button2
+	bspc node pointed -c
+
 #
 # bspwm hotkeys
 #

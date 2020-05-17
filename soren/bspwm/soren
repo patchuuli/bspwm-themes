@@ -35,7 +35,6 @@ setxkbmap -option caps:swapescape  &
 dunst -config ~/.config/dunst/dunstrc-soren &
 xrdb ~/.config/Xresources/soren &
 redshift -x -PO 5600 &
-#theme-zathura-sh haruhi &
+theme-zathura-sh soren-light &
 sleep 2
-#~/.scripts/tewi-fortune.sh &
 pulseaudio -D &
