@@ -6,7 +6,7 @@ lgreen = #383c2e
 mgray = #5f5f5f
 
 [bar/soren]
-height = 30
+height = 14
 background = ${soren.black}
 foreground = ${soren.white}
 font-0 = IBM Plex Mono:style=Medium:size=9;1
@@ -77,6 +77,7 @@ format-prefix = 
 format-prefix-foreground = ${soren.white}
 ;format-underline = #0a6cf5
 label = %date% %time%
+click-right = orage &
 
 [module/pulseaudio]
 type = internal/pulseaudio
