@@ -1,0 +1,88 @@
+[colors]
+bg=${env:theme_bg}
+fg=${env:theme_fg}
+
+[bar/bar]
+height = 14
+background = ${colors.bg}
+foreground = ${colors.fg}
+font-0 = Hack:style=Medium:size=9;1
+line-size = 0
+bottom = false
+module-margin-left = 0
+module-margin-right = 0
+padding-left = 0
+padding-right = 0
+tray-position = left
+modules-left = pulseaudio date
+modules-right = bspwm
+ 
+[module/bspwm]
+type = internal/bspwm
+ws-icon-0 = 1;premier
+ws-icon-1 = 2;seconde
+ws-icon-2 = 3;troisième
+ws-icon-3 = 4;quatrième
+format = <label-state> <label-mode>
+label-monitor = %name%
+label-focused = %icon%
+label-focused-padding = 2
+label-focused-margin = 0
+label-focused-background = ${colors.fg}
+label-focused-foreground = ${colors.bg}
+label-occupied = %icon%
+label-occupied-padding = 2
+label-occupied-margin = 0
+label-occupied-background = ${colors.bg}
+label-occupied-foreground = ${colors.fg} 
+label-urgent = %icon%!
+label-urgent-padding = 2
+label-urgent-margin = 0
+label-urgent-background = ${colors.bg}
+label-urgent-foreground = ${colors.fg}
+label-empty = %icon%
+label-empty-padding = 2
+label-empty-background = ${colors.bg}
+label-empty-foreground = ${colors.fg}
+label-empty-margin = 0
+label-separator = .
+label-separator-foreground = ${colors.bg}
+
+[module/date]
+type = internal/date
+interval = 10
+date =
+date-alt = " %Y-%m-%d"
+time = %a %m/%d/%y %I:%M %p
+time-alt = %H:%M:%S
+format-prefix = 
+format-prefix-foreground = ${colors.fg}
+label = %date% %time%
+click-right = orage &
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = true
+interval = 5
+format-volume =<label-volume>
+label-volume =VOL: %percentage%%
+label-volume-padding = 2
+format-volume-foreground = ${colors.fg}
+label-muted =VOL: %percentage%%
+label-muted-padding = 2
+label-muted-underline = ${colors.fg}
+label-muted-foreground = ${colors.bg}
+label-muted-background = ${colors.fg}
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
+click-right = pavucontrol &
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 20
+margin-bottom = 0
+

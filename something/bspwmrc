@@ -1,0 +1,64 @@
+#! /bin/sh
+
+## Color schemes
+
+# Dark
+bg_dark="#151515"
+fg_dark="#b5b5b5"
+# Light
+fg_light="#050505"
+bg_light="#e5e5e5"
+
+## Set colors
+if [ $theme == "dark" ]; then
+	export theme_bg=$bg_dark
+	export theme_fg=$fg_dark
+elif [ $theme == "light" ]; then
+	export theme_bg=$bg_light
+	export theme_fg=$fg_light
+fi
+
+
+
+########## BSPWM ###########
+bspc config remove_unplugged_monitors true
+bspc config remove_disabled_monitors true
+bspc monitor eDP-1 -d 1 2 3 4
+bspc monitor HDMI-1 -d 1 2 3 4
+
+bspc config normal_border_color 	"${theme_bg}"
+bspc config active_border_color 	"${theme_bg}"
+bspc config focused_border_color 	"${theme_fg}"
+bspc config presel_feedback_color "${theme_fg}"
+
+bspc config border_width         	2
+bspc config window_gap          	18
+bspc config top_padding         	-2
+bspc config left_padding         	-8
+bspc config right_padding        	-8
+bspc config bottom_padding       	-8
+
+bspc config split_ratio          	0.50
+bspc config borderless_monocle   	true
+bspc config gapless_monocle      	true
+bspc config focus_follows_pointer 	false
+bspc config pointer_modifier mod1
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_corner
+
+bspc rule -a Emacs state=tiled
+bspc rule -a Zathura state=tiled
+
+########## STARTUP ###########
+~/.scripts/st_change_theme.sh $theme &
+sxhkd -c ~/.config/wm/sxhkdrc &
+xsetroot -cursor_name left_ptr &
+feh --bg-fill $HOME/pic/d.jpg &
+polybar --config=~/.config/wm/polybar bar &
+picom --config ~/.config/wm/picom &
+setxkbmap -option caps:swapescape  &
+dunst &
+xrdb ~/.config/wm/xresources &
+nm-applet &
+redshift -x -PO 5400 &
+pulseaudio -D
